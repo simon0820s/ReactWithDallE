@@ -27,7 +27,7 @@ export async function POST(request: Request) {
         const aiResponse = await openai.createImage({
             prompt: promptString,
             n: 1,
-            size: "1024x1024",
+            size: "512x512",
         })
 
         console.log(aiResponse.data.data)
